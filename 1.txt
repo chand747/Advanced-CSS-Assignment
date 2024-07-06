@@ -1,0 +1,24 @@
+Explain the purpose of using the var() function in css?
+Solution:-
+- The var() function is used to insert the value of a CSS variable.
+- The var() CSS function can be used to insert the value of a custom property (sometimes called a "CSS variable") instead of any part of a value of another property.
+
+Syntax: var(--name, value)
+
+CSS Demo: var()
+i) border-color var(--color-a);
+ii) border-color var(--color-b);
+iii) border-color var(--color-c);
+
+
+To declare a variable in plain CSS, place two hyphens in front of the custom name you choose for the variable, or property, then use the var() function to place that value wherever you desire:
+
+How the var() function Works:
+i) First of all: CSS variables can have a global or local scope.
+ii) Global variables can be accessed/used throughout the entire document, while local variables can be used only inside the selector where it is declared.
+iii) To create a variable with global scope, declare it inside the: root selector. The :root selector matches the document's root element.
+iv) To create a variable with local scope, declare it inside the selector that is going to use it.
+
+Advantages of using var():
+- makes the code easier to read (more understandable).
+- makes it much easier to change the color values.
